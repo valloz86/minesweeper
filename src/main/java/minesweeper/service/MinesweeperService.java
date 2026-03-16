@@ -112,7 +112,7 @@ public class MinesweeperService {
                 request.getWidth(),
                 request.getHeight(),
                 request.getMinesCount(),
-        false,
+                false,
                 minesweeperGameMap.get(gameId).getHiddenField());
     }
 
