@@ -15,17 +15,17 @@ import java.util.concurrent.ConcurrentHashMap;
 @Service
 public class MinesweeperService {
 
-    private static final int MIN = 2; //минимальный лимит для ширины и высоты
-    private static final int MAX = 50; //максимальный лимит для ширины и высоты
+    public static final int MIN = 2; //минимальный лимит для ширины и высоты
+    public static final int MAX = 50; //максимальный лимит для ширины и высоты
 
-    private static final String MINE = "M"; //мина
-    private static final String FAIL = "X"; //подорванная мина
-    private static final String HIDDEN = " "; //скрытое поле
-    private static final String ZERO = "0"; //нулевое поле
+    public static final String MINE = "M"; //мина
+    public static final String FAIL = "X"; //подорванная мина
+    public static final String HIDDEN = " "; //скрытое поле
+    public static final String ZERO = "0"; //нулевое поле
 
-    private static final String INCORRECT_DATA = "Некорректные входные данные";
-    private static final String GAME_OVER = "Игра закончена или не начата";
-    private static final String REPEAT = "Попытка повторного открытия";
+    public static final String INCORRECT_DATA = "Некорректные входные данные";
+    public static final String GAME_OVER = "Игра закончена или не начата";
+    public static final String REPEAT = "Попытка повторного открытия";
 
     //мапа с играми
     private Map<UUID, MinesweeperGame> minesweeperGameMap = new ConcurrentHashMap<>();

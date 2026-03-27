@@ -2,6 +2,7 @@ package minesweeper.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.NonNull;
 
 /**
  * Запрос новой игры из API
@@ -9,11 +10,11 @@ import lombok.Data;
 @Data
 public class NewGameRequest {
 
-    int width;
+    @NonNull private int width;
 
-    int height;
+    @NonNull private int height;
 
     @JsonProperty("mines_count")
-    int minesCount;
+    @NonNull private int minesCount;
 
 }

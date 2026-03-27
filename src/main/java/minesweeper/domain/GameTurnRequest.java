@@ -2,6 +2,7 @@ package minesweeper.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.NonNull;
 
 import java.util.UUID;
 
@@ -12,9 +13,9 @@ import java.util.UUID;
 public class GameTurnRequest {
 
     @JsonProperty("game_id")
-    UUID gameId;
+    @NonNull private UUID gameId;
 
-    int col;
+    @NonNull private int col;
 
-    int row;
+    @NonNull private int row;
 }
