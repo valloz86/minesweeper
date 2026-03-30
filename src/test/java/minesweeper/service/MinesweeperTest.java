@@ -197,6 +197,9 @@ public class MinesweeperTest {
         }
     }
 
+    /**
+     * Невалидные входные данные
+     * */
     @Test
     public void invalidTest() {
         try {
